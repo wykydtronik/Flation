@@ -126,6 +126,8 @@ function flation_scripts() {
 
 	wp_enqueue_script( 'bodymargin-js', get_template_directory_uri() . '/js/bodymargin.js' );
 
+	wp_enqueue_style( 'bootstrap-social', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css');
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

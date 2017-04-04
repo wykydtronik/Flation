@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div class="col-xs-12 col-sm-12 col-md-12">
+	<div class="col-xs-12 col-sm-12 col-md-8">
 
 		<div id="primary" class="content-wrapper">
 			<main id="main" class="site-main" role="main">
@@ -37,4 +37,5 @@ get_header(); ?>
 
 	</div>
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
