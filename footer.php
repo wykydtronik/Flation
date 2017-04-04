@@ -19,9 +19,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12">
-							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'flation' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'flation' ), 'WordPress' ); ?></a>
-							<br>
-							<?php esc_html_e('Theme Flation by ', 'flation'); ?><a href="<?php echo esc_url( __( 'http://w-dev.ru/', 'flation' ) ); ?>"><?php printf( esc_html__( 'Chernousikov SO', 'flation' ) ); ?></a>
+
 						</div>
 					</div>
 				</div>

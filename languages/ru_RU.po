@@ -1,23 +1,23 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Project-Id-Version: Flation\n"
-"POT-Creation-Date: 2016-01-07 13:17+0300\n"
-"PO-Revision-Date: 2016-01-07 13:23+0300\n"
+"POT-Creation-Date: 2016-06-20 22:53+0300\n"
+"PO-Revision-Date: 2016-06-20 22:54+0300\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: \n"
-"Language: ru_RU\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -110,8 +110,6 @@ msgstr "Работает на %s"
 msgid "Theme Flation by "
 msgstr "Тема Flation сделана "
 
-#. Theme URI of the plugin/theme
-#. Author URI of the plugin/theme
 #: footer.php:24
 msgid "http://w-dev.ru/"
 msgstr "http://w-dev.ru/"
@@ -120,9 +118,17 @@ msgstr "http://w-dev.ru/"
 msgid "Chernousikov SO"
 msgstr "Chernousikov SO"
 
+#: functions.php:46
+msgid "Main Menu"
+msgstr "Главное меню"
+
 #: functions.php:102
 msgid "Sidebar"
 msgstr "Сайдбар"
+
+#: header.php:30
+msgid "Toggle navigation"
+msgstr "Меню с переключателем"
 
 #: inc/template-tags.php:28
 #, php-format
@@ -224,19 +230,17 @@ msgstr "Страницы:"
 msgid "Read More"
 msgstr "Читать далее"
 
-#. Theme Name of the plugin/theme
-msgid "Flation"
-msgstr "Flation"
+#~ msgid "Flation"
+#~ msgstr "Flation"
 
-#. Description of the plugin/theme
-msgid ""
-"Light pattern in a flat style adapt to any topic of the website. The site "
-"will look good on mobile devices because the template is involved Bootstrap."
-msgstr ""
-"Лёгкий шаблон в плоском стили подойдёт под любой веб-сайт. Сайт также будет "
-"хорошо смотреться и на мобильных устройствах, так как в шаблоне задействован "
-"Фреймворк Бутстрап."
+#~ msgid ""
+#~ "Light pattern in a flat style adapt to any topic of the website. The site "
+#~ "will look good on mobile devices because the template is involved "
+#~ "Bootstrap."
+#~ msgstr ""
+#~ "Лёгкий шаблон в плоском стили подойдёт под любой веб-сайт. Сайт также "
+#~ "будет хорошо смотреться и на мобильных устройствах, так как в шаблоне "
+#~ "задействован Фреймворк Бутстрап."
 
-#. Author of the plugin/theme
-msgid "cherniy95"
-msgstr "cherni95"
+#~ msgid "cherniy95"
+#~ msgstr "cherni95"

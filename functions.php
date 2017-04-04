@@ -22,7 +22,7 @@ function flation_setup() {
 	 * If you're building a theme based on flation, use a find and replace
 	 * to change 'flation' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'flation', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'flation' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -43,7 +43,7 @@ function flation_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu( 'primary', 'Main Menu' );
+	register_nav_menu( 'primary', esc_html__( 'Main Menu', 'flation' ) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -71,7 +71,7 @@ function flation_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'flation_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => '#343434',
 		'default-image' => '',
 	) ) );
 
@@ -110,32 +110,21 @@ function flation_widgets_init() {
 }
 add_action( 'widgets_init', 'flation_widgets_init' );
 
-function get_thumbnail_image_uri( $post_id ) {
-
-	if ( is_null( get_post_thumbnail_id( $post_id ) ) ) {
-		return null;
-	} else {
-		$thumb_id = get_post_thumbnail_id( $post_id );
-		$image = wp_get_attachment_image_src( $thumb_id, 'full' );
-		$image = $image[0];
-		echo $image;
-	}
-
-}
-
 /**
  * Enqueue scripts and styles.
  */
 function flation_scripts() {
 	//wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/bootstrap.css' );
 
-	wp_enqueue_style( 'flation-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'flation-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' );
 
 	wp_enqueue_style( 'lato-font', 'https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' );
 
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js' );
+
+	wp_enqueue_script( 'bodymargin-js', get_template_directory_uri() . '/js/bodymargin.js' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
