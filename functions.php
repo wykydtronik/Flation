@@ -114,7 +114,6 @@ add_action( 'widgets_init', 'flation_widgets_init' );
  * Enqueue scripts and styles.
  */
 function flation_scripts() {
-	//wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/bootstrap.css' );
 
 	wp_enqueue_style( 'flation-style', get_stylesheet_uri() );
 
@@ -122,7 +121,7 @@ function flation_scripts() {
 
 	wp_enqueue_style( 'lato-font', 'https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' );
 
-	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js' );
+	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' );
 
 	wp_enqueue_script( 'bodymargin-js', get_template_directory_uri() . '/js/bodymargin.js' );
 
